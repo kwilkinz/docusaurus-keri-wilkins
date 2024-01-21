@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Front-End Developer",
+  title: "SOFTWARE ENGINEER, FRONT END & APP DEVELOPER",
   tagline: "Keri Wilkins",
   favicon: "img/favicon.ico",
 

@@ -1,4 +1,4 @@
-/**
+/* *
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
@@ -36,6 +36,128 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+
+
+/* testing */
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.hero {
+  background-image: linear-gradient(40deg,hsla(0,0%,100%,.8) 62%,rgba(0,132,255,.1)),url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzI3MyAyMDU0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGNsaXAtcGF0aD0idXJsKCNhKSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgzMjczdjIwNTRIMHoiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTU5NTEuMzYgNDA4LjQ5MmMtNTQuOTIgMzIwLjQ5Ni0xODkuODIgNjE1LjA5OC0zMjQuMzcgOTA1Ljc3OC0xNDAuOTYgMzA0LjU0LTI2Ny4wNSA2MzYuNDMtNDkwLjIxIDg1NC4wNC0yMjMuOTUgMjE4LjM4LTUwMy4wMSAzNDMuNS03NzQuMjcgMzc4Ljk5LTI2Mi4yIDM0LjI5LTUyNC41OS0zNy43MS03NDguMzgtMTc5LjgxLTIwNi44OS0xMzEuMzcgODguNjctMjY5LTEyNS4xMy0zODQuNDktMjI4LjMzLTEyMy4zNC02ODIuOTEtMjM4LjA0LTg3My00MzMtMTc3Ljg5LTE4Mi40NS0zNjcuMzktNDM1LjQ1LTQ4Ni02ODMuNS0xNTYuNDQtMzI3LjE2NC03MTUuMDctNTA3LjgyMi03NTkuNS04OTYtNDAuMTMtMzUwLjU4NyA1MjYtNTU3LjY2NCA2NTEuOTktODk2LjQzIDEyNS42MS0zMzcuNzUgNTcuNjUtODE3LjgyIDMwNC4xMi0xMDMzLjMgMjcxLjAyLTIzNi45NSA2MjguMTggNTMuMTcgOTM5Ljc2LTU0LjE5IDI0MC41OS04Mi45MSA0MTkuMjctMzUzLjkyIDY0Ni45Ni00OTIuNTggMjgzLjk2LTE3Mi45NCA2MDEuMjItNTc4LjkzIDg2OC42MS00MzAuNDUgMjkwLjg5IDE2MS41NCAxNTUuNjcgNzkyLjAxIDM0Ni42OCAxMTA1LjMxIDE0MS42NiAyMzIuMzUgNDU1LjM1IDIxNi41NyA1OTkuNDEgNDQ2LjUgMTQ1LjY5IDIzMi41NCAxNzcuNjYgNTUyLjQ0OSAyMTUuMTcgODUzLjYxNiAzOC4zMyAzMDcuODIyIDYyLjI2IDYyMy43OTUgOC4xNiA5MzkuNTE2eiIgZmlsbD0iI0UzRjJGRiIvPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMzI3M3YyMDU0SDB6Ii8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  margin: 0;
+  width: 100vw;
+}
+@media (min-width: 1280px) {
+.MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-h2 {
+  font-size: 3.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+}
+.intro__name, .sidebarItemLinkActive_12pM, .text--primary {
+  color: var(--ifm-color-primary);
+}
+.MuiTypography-body1 {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-h6 {
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 3px 9px;
+  font-size: 0.8125rem;
+}
+.MuiButton-outlinedPrimary {
+  color: #3f51b5;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiGrid-spacing-xs-2 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+  padding: 8px;
+}
+.MuiGrid-item {
+  margin: 0;
+  box-sizing: border-box;
+}
+.MuiTypography-displayInline {
+  display: inline;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+  padding: 8px;
+}
+@media (min-width: 1280px){
+.MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+}
+
+
+
+
+
+
+
+
 
 
 /*
@@ -207,86 +329,6 @@ html[data-theme="dark"] .about-stack span {
   }
 }
 
-/*
-===============
-Contact Page
-===============
-*/
-.contact-page {
-  display: grid;
-  place-items: center;
-  padding: 5rem 0;
-}
-.contact-form {
-  background: var(--ifm-white);
-  border-radius: var(--radius);
-  text-align: center;
-  box-shadow: var(--light-shadow);
-  transition: var(--transition);
-  width: 90vw;
-  max-width: 35rem;
-}
-html[data-theme="dark"] .contact-form {
-  background: var(--ifm-color-grey-3);
-}
-
-.contact-form:hover {
-  box-shadow: var(--dark-shadow);
-}
-.contact-form h3 {
-  font-size: 1.8rem;
-  padding-top: 1.25rem;
-}
-.form-group {
-  padding: 1rem 1.5rem;
-}
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: none;
-  margin-bottom: 1.25rem;
-  background: var(--ifm-color-grey-10);
-  border-radius: var(--radius);
-  letter-spacing: var(--spacing);
-}
-.form-control::placeholder {
-  font-family: var(--ff-primary);
-  color: var(--ifm-color-grey-1);
-  text-transform: uppercase;
-  letter-spacing: var(--spacing);
-}
-.submit-btn {
-  background-color: var(--ifm-color-primary);
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: var(--ifm-white);
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  border: none;
-  border-bottom-left-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  transition: var(--transition);
-}
-.submit-btn:hover {
-  cursor: pointer;
-  background-color: var(--ifm-color-primary-dark);
-}
-.from-success {
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: var(--ifm-green-dark);
-  /* --ifm-green-dark: hsl(125, 67%, 35%);
-  --ifm-red-dark: hsl(360, 67%, 44%); */
-}
-.form-error div {
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: var(--ifm-red-light);
-}
 
 /*
 =============== 
