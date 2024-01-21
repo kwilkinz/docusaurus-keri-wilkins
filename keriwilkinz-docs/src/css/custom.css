@@ -38,7 +38,23 @@
  */
 
 
-/* testing */
+/*
+=============== 
+header
+===============
+*/
+html[data-theme="dark"] {
+  --post-title-color: white;
+  --post-pub-date-color: var(--ifm-color-gray-100);
+  --divider-color: #353535;
+  --ifm-toc-border-color: #313131;
+}
+html[data-theme="dark"] .MuiTypography-body1, 
+html[data-theme="dark"] .MuiTypography-gutterBottom,
+html[data-theme="dark"] .social-padding {
+  /* color: #1a8870; */
+  color: black
+}
 .MuiGrid-container {
   width: 100%;
   display: flex;
@@ -60,7 +76,7 @@
     flex-grow: 0;
     max-width: 50%;
     flex-basis: 50%;
-}
+  }
 }
 .MuiTypography-gutterBottom {
   margin-bottom: 0.35em;
@@ -150,22 +166,11 @@
     flex-basis: 50%;
 }
 }
-
-
-
-
-
-
-
-
-
-
 /*
 =============== 
 works
 ===============
 */
-
 .projects {
   background: var(--ifm-color-grey-10);
   padding-bottom: 1rem;
@@ -198,12 +203,27 @@ html[data-theme="dark"] .projects {
   border-top-right-radius: var(--radius);
   height: 25rem;
 }
-.image {
+/* .image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0.9;
+} */
+.image {
+  display: block;
+  width: 445px;
+  margin-top: 10px;
+  height: 100%;
+  object-fit: scale-down;
+  opacity: 0.9;
+}
+.left-float {
+  float: left;
+}
+
+.right-float {
+  float: right;
 }
 .work-img .img-mask {
   position: absolute;
@@ -327,6 +347,42 @@ html[data-theme="dark"] .about-stack span {
     grid-row: 1 / 1;
     text-align: left;
   }
+}
+/*
+=============== 
+header button resume
+===============
+*/
+.MuiButton-outlinedPrimary {
+  color: #3f51b5;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+  border-radius: 4px;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 5px 9px;
+  font-size: 0.8125rem;
+}
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+/*
+=============== 
+social header links
+===============
+*/
+.social-padding {
+  display: flex;
+}
+.social__padding__icons a {
+  padding-left: 8px;
 }
 
 

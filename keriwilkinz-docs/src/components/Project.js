@@ -1,14 +1,22 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faGithub } from "@fortawesome/free-brands-svg-icons";
-// import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
   return (
     <article className="work">
       <div className="work-img" onClick={() => window.open(url)}>
-        {image && <img src={useBaseUrl(image)} className="image" />}
+        {image && (
+          <img
+            src={useBaseUrl(image)}
+            className={`image ${
+              index % 2 === 0 ? "left-float" : "right-float"
+            }`}
+          />
+        )}
         <div className="img-mask"></div>
       </div>
       <div className="work-info">
@@ -22,10 +30,10 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         </div>
         <div className="work-links">
           <a href={github}>
-            {/* <FontAwesomeIcon icon={faGithub} className="work-icon" /> */}
+            <FontAwesomeIcon icon={faGithub} className="work-icon" />
           </a>
           <a href={url}>
-            {/* <FontAwesomeIcon icon={faExternalLinkAlt} className="work-icon" /> */}
+            <FontAwesomeIcon icon={faExternalLinkAlt} className="work-icon" />
           </a>
         </div>
       </div>
