@@ -69,7 +69,7 @@ const config = {
         title: "About Me",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/favicon.ico",
         },
         items: [
           {
@@ -80,7 +80,7 @@ const config = {
           },
           { to: "/blog", label: "Insight Hub", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/kwilkinz",
             label: "GitHub",
             position: "right",
           },
